@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+<table>
+<center>Registration Form</center>
+<br>
+<tr>
+<td>Username:</td>
+<td><input type="text" name="t1"></td>
+</tr>
+<tr>
+<td>Email:</td>
+<td><input type="text" name="t2"></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="tx"> </td>
+</tr>
+<tr>
+<td>Organization/Company:</td>
+<td><input type ="text" name="tx"></td>
+</tr>
+</table>
+</body>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<p>enter the address</p>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+House no:  <input type="text" ng-model="hno"><br>
+Street name:   <input type="text" ng-model="sname"><br>
+city,Postcode: <input type="text" ng-model="cityPincode"><br>
+<br>
+Adress: {{hno + ", " + sname + ", " + cityPincode}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.hno= " ";
+    $scope.sname= " ";
+    $scope.cityPincode= " ";
+});
+</script>
+
+<table>
+<tr>
+<td><input type ="checkbox" name="c">Terms & conditions</td>
+</tr>
+<br><br>
+</center>
+<tr>
+<td>         <input type ="button" value="submit" name="s"> 
+             <input type ="button" value="reset" name="r"></td>
+</tr>
+<table>
+</body>
+</html>
+
